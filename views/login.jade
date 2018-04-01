@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Login in the system
+    include bootstrap.jade
+  body(style='  background: linear-gradient(-90deg, black, white);')
+    include nav.jade
+    form(style='padding-top: 200px ;padding-left: 400px' method='post')
+      h4
+        span.label.label-info Username :
+      input#Email.form-control.col-sm-6(type='text', name='email', placeholder='Email')
+      h4
+        span.label.label-info Password :
+      input#Password.form-control.col-sm-6(type='text', name='password', placeholder='Password')
+      button.btn.btn-primary(type='submit') Submit

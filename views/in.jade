@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Man for your pet
+    include bootstrap.jade
+  body.bg-dark
+    nav.navbar.navbar-expand-sm.bg-dark
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='#') Home
+        li.nav-item
+          a.nav-link(href='Login.html') Login
+        li.nav-item
+          a.nav-link(href='Signup.html') Sign up
+    .jumbotron.jumbotron-fluid
+      .container
+        h1 Pet care takers 
+        p Search for pets or people to take care your pet
+    .container
+      .row
+        .col-sm-6.col-sm-offset-3
+          .input-group.stylish-input-group
+            input.form-control(type='text', placeholder='Search')
+            span.input-group-addon
+              button.btn.btn-info(type='button')
+                span.glyphicon.glyphicon-search
+                |  Search
